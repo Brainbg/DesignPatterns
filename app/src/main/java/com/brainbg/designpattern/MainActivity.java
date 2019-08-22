@@ -8,8 +8,9 @@ import android.view.View;
 
 import com.brainbg.designpattern.abstractFactory.AbstractFactoryActivity;
 import com.brainbg.designpattern.builder.BuilderActivity;
-import com.brainbg.designpattern.factory.FactoryActivity;
+import com.brainbg.designpattern.factoryMethod.FactoryActivity;
 import com.brainbg.designpattern.simpleFactory.SimpleFactoryActivity;
+import com.brainbg.designpattern.templateMethod.TemplateMethodActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Context mContext;
@@ -23,6 +24,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_factory).setOnClickListener(this);
         findViewById(R.id.btn_abstact_factory).setOnClickListener(this);
         findViewById(R.id.btn_builder).setOnClickListener(this);
+        findViewById(R.id.btn_template_method).setOnClickListener(this);
+
+//        new AlertDialog.Builder(mContext).setIcon()
+//                .setIconAttribute()
+//                .setCancelable()
+//                .setMessage()
+//                .setMultiChoiceItems()
+//                .create();
     }
 
     @Override
@@ -39,6 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_builder:
                 startActivity(new Intent(mContext, BuilderActivity.class));
+                break;
+            case R.id.btn_template_method:
+                startActivity(new Intent(mContext, TemplateMethodActivity.class));
                 break;
         }
     }

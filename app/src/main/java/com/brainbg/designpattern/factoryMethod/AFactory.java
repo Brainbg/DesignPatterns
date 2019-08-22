@@ -1,4 +1,4 @@
-package com.brainbg.designpattern.factory;
+package com.brainbg.designpattern.factoryMethod;
 
 public class AFactory extends DataLineFactory {
     @Override
