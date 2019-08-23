@@ -1,4 +1,4 @@
-package com.brainbg.designpattern.adapter.commonCodeSimple;
+package com.brainbg.designpattern.adapter.classAdapter;
 
 /**
  * <pre>
@@ -8,6 +8,6 @@ package com.brainbg.designpattern.adapter.commonCodeSimple;
  *     desc   : 目标
  * </pre>
  */
-public interface Target {
+public interface ClassTarget {
     void targetMethod();
 }
