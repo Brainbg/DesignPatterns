@@ -1,4 +1,4 @@
-package com.brainbg.designpattern.factory;
+package com.brainbg.designpattern.factoryMethod;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

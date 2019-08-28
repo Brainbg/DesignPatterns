@@ -48,6 +48,12 @@
         <TextView
             android:text="@string/BehaviorPattern"
             style="@style/TextViewStyle" />
+
+
+        <Button
+            android:id="@+id/btn_template_method"
+            android:text="@string/TemplateMethodPattern"
+            style="@style/ButtonStyle" />
     </LinearLayout>
 
 </ScrollView>

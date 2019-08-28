@@ -19,9 +19,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".simpleFactory.SimpleFactoryActivity" />
-        <activity android:name=".factory.FactoryActivity" />
+        <activity android:name=".factoryMethod.FactoryActivity" />
         <activity android:name=".abstractFactory.AbstractFactoryActivity" />
         <activity android:name=".builder.BuilderActivity" />
+        <activity android:name=".templateMethod.TemplateMethodActivity" />
     </application>
 
 </manifest>
