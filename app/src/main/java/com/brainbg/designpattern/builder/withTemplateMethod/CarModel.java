@@ -1,8 +1,4 @@
-package com.brainbg.designpattern.builder.withTemplateMethon;
-
-import android.app.Dialog;
-import android.support.v4.app.DialogFragment;
-import android.widget.PopupWindow;
+package com.brainbg.designpattern.builder.withTemplateMethod;
 
 import java.util.ArrayList;
 

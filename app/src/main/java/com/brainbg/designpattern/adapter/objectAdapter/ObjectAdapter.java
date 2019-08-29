@@ -23,6 +23,6 @@ public class ObjectAdapter implements ObjectTarget {
     @Override
     public void targetMethod() {
         //业务逻辑
-        this.adaptee.adaptee1Method();
+        this.adaptee.adapteeMethod();
     }
 }

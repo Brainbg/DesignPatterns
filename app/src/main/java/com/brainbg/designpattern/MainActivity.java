@@ -20,10 +20,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mContext = this;
+
         findViewById(R.id.btn_simple_factory).setOnClickListener(this);
         findViewById(R.id.btn_factory).setOnClickListener(this);
         findViewById(R.id.btn_abstact_factory).setOnClickListener(this);
         findViewById(R.id.btn_builder).setOnClickListener(this);
+        findViewById(R.id.btn_prototype).setOnClickListener(this);
+
         findViewById(R.id.btn_template_method).setOnClickListener(this);
 
 //        new AlertDialog.Builder(mContext).setIcon()
@@ -37,19 +40,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_simple_factory:
+            case R.id.btn_simple_factory: //简单工厂模式
                 startActivity(new Intent(mContext, SimpleFactoryActivity.class));
                 break;
-            case R.id.btn_factory:
+            case R.id.btn_factory://工厂方法模式
                 startActivity(new Intent(mContext, FactoryActivity.class));
                 break;
-            case R.id.btn_abstact_factory:
+            case R.id.btn_abstact_factory://抽象工厂模式
                 startActivity(new Intent(mContext, AbstractFactoryActivity.class));
                 break;
-            case R.id.btn_builder:
+
+            case R.id.btn_builder://建造者模式
                 startActivity(new Intent(mContext, BuilderActivity.class));
                 break;
-            case R.id.btn_template_method:
+
+            case R.id.btn_prototype://建造者模式
+                startActivity(new Intent(mContext, BuilderActivity.class));
+                break;
+
+            case R.id.btn_template_method://模板方法模式
                 startActivity(new Intent(mContext, TemplateMethodActivity.class));
                 break;
         }
