@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_abstact_factory).setOnClickListener(this);
         findViewById(R.id.btn_builder).setOnClickListener(this);
         findViewById(R.id.btn_prototype).setOnClickListener(this);
-
         findViewById(R.id.btn_template_method).setOnClickListener(this);
 
 //        new AlertDialog.Builder(mContext).setIcon()
