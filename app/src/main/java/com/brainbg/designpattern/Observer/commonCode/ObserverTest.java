@@ -9,7 +9,6 @@ package com.brainbg.designpattern.Observer.commonCode;
  * </pre>
  */
 public class ObserverTest {
-
     public static void main(String[] args) {
         Observer concreteObserver = new ConcreteObserver();
         Subject subject = new ConCreteSubject();

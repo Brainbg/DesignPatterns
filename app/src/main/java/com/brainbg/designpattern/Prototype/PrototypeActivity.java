@@ -19,7 +19,7 @@ import com.brainbg.designpattern.templateMethod.PersonalResume2;
  * </pre>
  */
 public class PrototypeActivity extends AppCompatActivity implements View.OnClickListener {
-    private TextView tv_produceContent;
+    private TextView tv_test_content;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,23 +30,21 @@ public class PrototypeActivity extends AppCompatActivity implements View.OnClick
     }
 
     private void initView() {
-        findViewById(R.id.btn_create_resume1).setOnClickListener(this);
-        findViewById(R.id.btn_create_resume2).setOnClickListener(this);
-        tv_produceContent = findViewById(R.id.tv_produce_content);
+        findViewById(R.id.btn_test_clone).setOnClickListener(this);
+        tv_test_content = findViewById(R.id.tv_test_content);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_create_resume1:
-                PersonalResume1 pr1 = new PersonalResume1();
+            case R.id.btn_test_clone:
+                Prototype prototype = new Prototype();
+                try {
+                    prototype.clone();
+                } catch (CloneNotSupportedException e) {
+                    e.printStackTrace();
+                }
 
-                tv_produceContent.setText(pr1.createResume());
-                break;
-
-            case R.id.btn_create_resume2:
-                PersonalResume2 pr2 = new PersonalResume2();
-                tv_produceContent.setText(pr2.createResume());
                 break;
         }
 

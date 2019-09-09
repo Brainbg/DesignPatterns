@@ -12,36 +12,17 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_create_resume1"
+            android:id="@+id/btn_test_clone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="15dp"
-            android:text="个人简历1"
-            android:textAllCaps="false" />
-
-        <Button
-            android:id="@+id/btn_create_resume2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:text="个人简历2"
+            android:text="测试clone"
             android:textAllCaps="false" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:text="简历结果:"
-            android:textColor="@color/colorPrimary"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/tv_produce_content"
+            android:id="@+id/tv_test_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"

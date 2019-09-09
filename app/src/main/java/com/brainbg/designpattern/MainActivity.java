@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.brainbg.designpattern.Prototype.PrototypeActivity;
 import com.brainbg.designpattern.abstractFactory.AbstractFactoryActivity;
 import com.brainbg.designpattern.builder.BuilderActivity;
 import com.brainbg.designpattern.factoryMethod.FactoryActivity;
@@ -18,16 +19,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.example);
         mContext = this;
 
-        findViewById(R.id.btn_simple_factory).setOnClickListener(this);
-        findViewById(R.id.btn_factory).setOnClickListener(this);
-        findViewById(R.id.btn_abstact_factory).setOnClickListener(this);
-        findViewById(R.id.btn_builder).setOnClickListener(this);
-        findViewById(R.id.btn_prototype).setOnClickListener(this);
-
-        findViewById(R.id.btn_template_method).setOnClickListener(this);
+//        findViewById(R.id.btn_simple_factory).setOnClickListener(this);
+//        findViewById(R.id.btn_factory).setOnClickListener(this);
+//        findViewById(R.id.btn_abstact_factory).setOnClickListener(this);
+//        findViewById(R.id.btn_builder).setOnClickListener(this);
+//        findViewById(R.id.btn_prototype).setOnClickListener(this);
+//
+//        findViewById(R.id.btn_template_method).setOnClickListener(this);
 
 //        new AlertDialog.Builder(mContext).setIcon()
 //                .setIconAttribute()
@@ -54,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(mContext, BuilderActivity.class));
                 break;
 
-            case R.id.btn_prototype://建造者模式
-                startActivity(new Intent(mContext, BuilderActivity.class));
+            case R.id.btn_prototype://原型模式
+                startActivity(new Intent(mContext, PrototypeActivity.class));
                 break;
 
             case R.id.btn_template_method://模板方法模式
