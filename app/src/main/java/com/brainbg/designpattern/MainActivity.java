@@ -19,23 +19,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.example);
+        setContentView(R.layout.activity_main);
         mContext = this;
+        findViewById(R.id.btn_simple_factory).setOnClickListener(this);
+        findViewById(R.id.btn_factory).setOnClickListener(this);
+        findViewById(R.id.btn_abstact_factory).setOnClickListener(this);
+        findViewById(R.id.btn_builder).setOnClickListener(this);
+        findViewById(R.id.btn_prototype).setOnClickListener(this);
+        findViewById(R.id.btn_template_method).setOnClickListener(this);
 
-//        findViewById(R.id.btn_simple_factory).setOnClickListener(this);
-//        findViewById(R.id.btn_factory).setOnClickListener(this);
-//        findViewById(R.id.btn_abstact_factory).setOnClickListener(this);
-//        findViewById(R.id.btn_builder).setOnClickListener(this);
-//        findViewById(R.id.btn_prototype).setOnClickListener(this);
-//
-//        findViewById(R.id.btn_template_method).setOnClickListener(this);
-
-//        new AlertDialog.Builder(mContext).setIcon()
-//                .setIconAttribute()
-//                .setCancelable()
-//                .setMessage()
-//                .setMultiChoiceItems()
-//                .create();
     }
 
     @Override
