@@ -1,7 +1,4 @@
-package com.brainbg.designpattern.Observer.jdkObserver;
-
-import java.util.Observable;
-import java.util.Observer;
+package com.brainbg.designpattern.observer.commonCode;
 
 /**
  * <pre>
@@ -12,12 +9,10 @@ import java.util.Observer;
  * </pre>
  */
 public class ObserverTest {
-
     public static void main(String[] args) {
         Observer concreteObserver = new ConcreteObserver();
-
-        Observable subject = new ConCreteSubject();
+        Subject subject = new ConCreteSubject();
         subject.addObserver(concreteObserver);
-        subject.notifyObservers();
+        subject.notifyObserver();
     }
 }

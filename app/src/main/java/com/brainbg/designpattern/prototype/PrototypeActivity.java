@@ -1,4 +1,4 @@
-package com.brainbg.designpattern.Prototype;
+package com.brainbg.designpattern.prototype;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.brainbg.designpattern.R;
-import com.brainbg.designpattern.templateMethod.PersonalResume1;
-import com.brainbg.designpattern.templateMethod.PersonalResume2;
 
 /**
  * <pre>

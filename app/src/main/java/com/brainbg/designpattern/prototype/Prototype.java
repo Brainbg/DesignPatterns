@@ -1,4 +1,4 @@
-package com.brainbg.designpattern.Prototype;
+package com.brainbg.designpattern.prototype;
 
 /**
  * <pre>

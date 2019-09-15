@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.brainbg.designpattern.Prototype.PrototypeActivity;
+import com.brainbg.designpattern.prototype.PrototypeActivity;
 import com.brainbg.designpattern.abstractFactory.AbstractFactoryActivity;
 import com.brainbg.designpattern.builder.BuilderActivity;
 import com.brainbg.designpattern.factoryMethod.FactoryActivity;

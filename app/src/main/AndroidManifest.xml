@@ -23,7 +23,7 @@
         <activity android:name=".abstractFactory.AbstractFactoryActivity" />
         <activity android:name=".builder.BuilderActivity" />
         <activity android:name=".templateMethod.TemplateMethodActivity" />
-        <activity android:name=".Prototype.PrototypeActivity" />
+        <activity android:name=".prototype.PrototypeActivity" />
     </application>
 
 </manifest>

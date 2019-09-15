@@ -1,4 +1,4 @@
-package com.brainbg.designpattern.Observer.jdkObserver;
+package com.brainbg.designpattern.observer.jdkObserver;
 
 import java.util.Observable;
 import java.util.Observer;

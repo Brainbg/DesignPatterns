@@ -1,4 +1,4 @@
-package com.brainbg.designpattern.Observer.commonCode;
+package com.brainbg.designpattern.observer.commonCode;
 
 import java.util.ArrayList;
 
