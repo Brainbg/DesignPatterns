@@ -1,10 +1,10 @@
-package com.brainbg.designpattern.memento.commonCode;
+package com.brainbg.designpattern.memento.multiProperty;
 
- class Caretaker {
+class CareTaker {
     private Memento memento;
 
     public Memento getMemento() {
-        return this.memento;
+        return memento;
     }
 
     public void setMemento(Memento memento) {

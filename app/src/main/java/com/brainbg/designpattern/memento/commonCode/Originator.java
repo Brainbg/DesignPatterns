@@ -1,6 +1,6 @@
 package com.brainbg.designpattern.memento.commonCode;
 
-public class Originator {
+class Originator {
     private String state="";
 
     public String getState() {

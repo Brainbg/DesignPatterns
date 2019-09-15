@@ -1,6 +1,6 @@
 package com.brainbg.designpattern.memento.clone;
 
-public class MementorCloneTest {
+public class Test {
     public static void main(String[] args) {
         //创建原发器
         Originator originator = new Originator();

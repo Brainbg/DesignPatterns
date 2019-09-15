@@ -1,6 +1,6 @@
 package com.brainbg.designpattern.memento.clone;
 
-public class Originator implements Cloneable {
+ class Originator implements Cloneable {
     private Originator backup;
     public String state = "";
 
@@ -13,13 +13,11 @@ public class Originator implements Cloneable {
     }
 
     public void createMemento() {
-
         try {
             this.backup = (Originator) this.clone();
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
-
     }
 
     public void restoreMementor() {
@@ -29,7 +27,6 @@ public class Originator implements Cloneable {
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
-
     }
 
 }

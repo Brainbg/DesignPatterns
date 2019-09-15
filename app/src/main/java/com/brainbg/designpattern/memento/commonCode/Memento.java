@@ -1,6 +1,5 @@
 package com.brainbg.designpattern.memento.commonCode;
-
-public class Memento {
+class Memento {
     private String state = "";
 
     public Memento(String state) {
