@@ -8,7 +8,8 @@ package com.brainbg.designpattern.observer.commonCode;
  *     desc   : 具体被观察者
  * </pre>
  */
-public class ConCreteSubject extends Subject {
+class ConcreteSubject extends Subject {
+
     @Override
     public void notifyObserver() {
         for (Observer observer : super.observers) {

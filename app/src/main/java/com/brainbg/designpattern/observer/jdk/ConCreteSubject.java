@@ -1,4 +1,4 @@
-package com.brainbg.designpattern.observer.jdkObserver;
+package com.brainbg.designpattern.observer.jdk;
 
 import java.util.Observable;
 
@@ -10,7 +10,7 @@ import java.util.Observable;
  *     desc   : 具体被观察者
  * </pre>
  */
-public class ConCreteSubject extends Observable{
+class ConCreteSubject extends Observable {
 
 
 }

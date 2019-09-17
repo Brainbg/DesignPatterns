@@ -10,7 +10,7 @@ import java.util.ArrayList;
  *     desc   : 被观察者
  * </pre>
  */
-public abstract class Subject {
+abstract class Subject {
     protected ArrayList<Observer> observers = new ArrayList<>();
 
     /**

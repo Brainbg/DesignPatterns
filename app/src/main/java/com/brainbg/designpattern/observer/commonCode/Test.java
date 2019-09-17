@@ -8,11 +8,16 @@ package com.brainbg.designpattern.observer.commonCode;
  *     desc   :观察者模式测试
  * </pre>
  */
-public class ObserverTest {
+class Test {
     public static void main(String[] args) {
         Observer concreteObserver = new ConcreteObserver();
-        Subject subject = new ConCreteSubject();
+        Observer concreteObserver1 = new ConcreteObserver();
+
+        Subject subject = new ConcreteSubject();
+
         subject.addObserver(concreteObserver);
+        subject.addObserver(concreteObserver1);
+
         subject.notifyObserver();
     }
 }

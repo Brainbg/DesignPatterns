@@ -1,4 +1,4 @@
-package com.brainbg.designpattern.observer.jdkObserver;
+package com.brainbg.designpattern.observer.jdk;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -11,7 +11,7 @@ import java.util.Observer;
  *     desc   :观察者模式测试
  * </pre>
  */
-public class ObserverTest {
+public class Test {
 
     public static void main(String[] args) {
         Observer concreteObserver = new ConcreteObserver();

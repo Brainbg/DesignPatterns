@@ -8,6 +8,6 @@ package com.brainbg.designpattern.observer.commonCode;
  *     desc   : 观察者
  * </pre>
  */
-public interface Observer {
+interface Observer {
     void updata();
 }

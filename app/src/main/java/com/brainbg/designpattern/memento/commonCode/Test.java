@@ -1,6 +1,6 @@
 package com.brainbg.designpattern.memento.commonCode;
 
-public class MementoTest {
+public class Test {
     public static void main(String[] args) {
         //原发器
         Originator originator = new Originator();

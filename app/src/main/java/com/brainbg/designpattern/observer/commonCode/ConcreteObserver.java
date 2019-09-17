@@ -8,9 +8,10 @@ package com.brainbg.designpattern.observer.commonCode;
  *     desc   : 具体观察者
  * </pre>
  */
-public class ConcreteObserver implements Observer {
+ class ConcreteObserver implements Observer {
     @Override
     public void updata() {
         //具体的业务逻辑
+        System.out.println("收到来自被观察的更新！");
     }
 }
