@@ -8,7 +8,7 @@ package com.brainbg.designpattern.bridge.commonCode;
  *     desc   :
  * </pre>
  */
-class ConcreteImplementor implements Implementor {
+class ConcreteImplementorB implements Implementor {
 
     @Override
     public void doSomething() {

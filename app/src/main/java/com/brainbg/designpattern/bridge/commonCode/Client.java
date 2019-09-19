@@ -8,10 +8,9 @@ package com.brainbg.designpattern.bridge.commonCode;
  *     desc   :
  * </pre>
  */
-public class Test {
-
+public class Client {
     public static void main(String[] args) {
-        Implementor imp = new ConcreteImplementor();
+        Implementor imp = new ConcreteImplementorA();
         Abstraction abstraction = new RefinedAbstraction(imp);
         abstraction.reques();
     }
