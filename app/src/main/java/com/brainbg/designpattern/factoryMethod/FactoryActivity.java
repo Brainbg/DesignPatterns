@@ -47,6 +47,7 @@ public class FactoryActivity extends AppCompatActivity implements View.OnClickLi
             case R.id.btn_produce_apple://生产苹果数据线
                 tv_produceContent.setText(sb.append(aFactory.product().produceLine()));
                 break;
+
             case R.id.btn_produce_android://生产安卓数据线
                 tv_produceContent.setText(sb.append(bFactory.product().produceLine()));
                 break;

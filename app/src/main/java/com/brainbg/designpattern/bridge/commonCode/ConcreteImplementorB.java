@@ -5,18 +5,12 @@ package com.brainbg.designpattern.bridge.commonCode;
  *     author : brainbg
  *     e-mail : brainbg@foxmail.com
  *     time   : 2019/09/18
- *     desc   :
+ *     desc   :抽象部分B
  * </pre>
  */
 class ConcreteImplementorB implements Implementor {
-
     @Override
-    public void doSomething() {
-
-    }
-
-    @Override
-    public void doAnything() {
-
+    public void operationImpl() {
+        System.out.println("抽象部分B具体实现");
     }
 }

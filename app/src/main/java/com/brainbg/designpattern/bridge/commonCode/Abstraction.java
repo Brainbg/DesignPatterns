@@ -9,17 +9,22 @@ package com.brainbg.designpattern.bridge.commonCode;
  * </pre>
  */
 abstract class Abstraction {
-    private Implementor imp;
+    protected Implementor mImplementor;
 
-    public Abstraction(Implementor imp) {
-        this.imp = imp;
+    /**
+     * 通过实现部分对象的引用构造出抽象部分的对象。
+     * 同时约束子类必须实现该构造函数
+     *
+     * @param mImplementor 引用实现部分的对象
+     */
+    public Abstraction(Implementor mImplementor) {
+        this.mImplementor = mImplementor;
     }
 
-    public void reques() {
-        this.imp.doSomething();
-    }
-
-    public Implementor getImp() {
-        return imp;
+    /**
+     * 通过调用实现部分中的方法实现具体的功能。
+     */
+    public void operation() {
+        this.mImplementor.operationImpl();
     }
 }

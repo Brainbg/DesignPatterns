@@ -9,8 +9,9 @@ package com.brainbg.designpattern.bridge.commonCode;
  * </pre>
  */
 interface Implementor {
-    public void doSomething();
-
-    public void doAnything();
+    /**
+     * 实现抽象部分的具体方法
+     */
+    public void operationImpl();
 }
 

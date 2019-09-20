@@ -5,19 +5,21 @@ package com.brainbg.designpattern.bridge.commonCode;
  *     author : brainbg
  *     e-mail : brainbg@foxmail.com
  *     time   : 2019/09/18
- *     desc   :
+ *     desc   :优化/具体抽象部分
  * </pre>
  */
 public class RefinedAbstraction extends Abstraction {
 
-    public RefinedAbstraction(Implementor imp) {
-        super(imp);
+    public RefinedAbstraction(Implementor mImplementor) {
+        super(mImplementor);
     }
 
+    /**
+     * 对父类抽象部分中的方法进行拓展或者修正。
+     */
     @Override
-    public void reques() {
-        super.reques();
-        super.getImp().doAnything();
-        System.out.println("修正父类的行为");
+    public void operation() {
+        super.operation();
+        System.out.println("拓展、修正父类");
     }
 }

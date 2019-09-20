@@ -1,16 +1,16 @@
-package com.brainbg.designpattern.bridge.coffee;
+package com.brainbg.designpattern.bridge.MilkTea;
 
 /**
  * <pre>
  *     author : Brainbg
  *     e-mail : brainbg@foxmail.com
- *     time   : 2019/09/19
+ *     time   : 2019/09/20
  *     desc   :
  * </pre>
  */
-public class Ordinary extends CoffeeAdditives {
+public class CapFlavor implements Flavor {
     @Override
     public String addSomething() {
-        return "原味";
+        return "奶盖";
     }
 }
