@@ -5,7 +5,7 @@ package com.brainbg.designpattern.decorator.commonCode;
  *     author : Brainbg
  *     e-mail : brainbg@foxmail.com
  *     time   : 2019/09/20
- *     desc   :
+ *     desc   :客户类
  * </pre>
  */
 public class Client {
@@ -17,7 +17,5 @@ public class Client {
         component = new ConcreteDecoratorB(component);
         //展示装饰效果
         component.operation();
-
     }
-
 }

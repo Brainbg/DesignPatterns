@@ -5,10 +5,10 @@ package com.brainbg.designpattern.decorator.commonCode;
  *     author : Brainbg
  *     e-mail : brainbg@foxmail.com
  *     time   : 2019/09/20
- *     desc   :
+ *     desc   :组件
  * </pre>
  */
-abstract class Component {
+public abstract class Component {
     /**
      * 抽象方法，可根据具体的业务逻辑增加更多。
      */

@@ -5,10 +5,10 @@ package com.brainbg.designpattern.decorator.commonCode;
  *     author : Brainbg
  *     e-mail : brainbg@foxmail.com
  *     time   : 2019/09/20
- *     desc   :
+ *     desc   :具体装饰者A
  * </pre>
  */
-class ConcreteDecoratorA extends Decorator {
+public class ConcreteDecoratorA extends Decorator {
 
     public ConcreteDecoratorA(Component mComponent) {
         super(mComponent);
