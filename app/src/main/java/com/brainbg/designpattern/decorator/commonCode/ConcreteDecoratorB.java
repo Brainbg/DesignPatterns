@@ -14,16 +14,19 @@ class ConcreteDecoratorB extends Decorator {
         super(mComponent);
     }
 
-    private void methodB() {
-        System.out.println("装饰方法B");
+    /**
+     * 添加功能
+     */
+    private void addFeatureA() {
+        System.out.println("添加功能A");
     }
 
     /**
      * 装饰方法B在父类方法前后调用皆可。
      */
     @Override
-    public void operate() {
-        super.operate();
-        this.methodB();
+    public void operation() {
+        super.operation();
+        this.addFeatureA();
     }
 }

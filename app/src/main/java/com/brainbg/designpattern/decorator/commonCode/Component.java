@@ -12,5 +12,5 @@ abstract class Component {
     /**
      * 抽象方法，可根据具体的业务逻辑增加更多。
      */
-    public abstract void operate();
+    public abstract void operation();
 }

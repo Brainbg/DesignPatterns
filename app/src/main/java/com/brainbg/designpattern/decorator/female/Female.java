@@ -5,7 +5,7 @@ package com.brainbg.designpattern.decorator.female;
  *     author : Brainbg
  *     e-mail : brainbg@foxmail.com
  *     time   : 2019/09/20
- *     desc   :
+ *     desc   ：抽象女性
  * </pre>
  */
 public abstract class Female {

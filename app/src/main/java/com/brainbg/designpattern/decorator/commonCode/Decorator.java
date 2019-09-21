@@ -24,7 +24,7 @@ abstract class Decorator extends Component {
      * 委托给装饰者执行
      */
     @Override
-    public void operate() {
-        this.mComponent.operate();
+    public void operation() {
+        this.mComponent.operation();
     }
 }

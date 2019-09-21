@@ -11,9 +11,9 @@ package com.brainbg.designpattern.decorator.commonCode;
 class ConcreteComponent extends Component {
 
     @Override
-    public void operate() {
+    public void operation() {
         //具体业务逻辑
-        System.out.println("具体组件的业务逻辑");
+        System.out.println("原具体组件的业务逻辑");
     }
 
 }

@@ -17,21 +17,21 @@ public class HeavyMakeup extends Makeup {
     /**
      * 画眉
      */
-    public void thrush() {
+    private void thrush() {
         System.out.println("画个眉毛");
     }
 
     /**
      * 粉底
      */
-    public void foundation() {
+    private void foundation() {
         System.out.println("打个粉底");
     }
 
     /**
      * 口红
      */
-    public void lipstick() {
+    private void lipstick() {
         System.out.println("涂个口红");
     }
 
@@ -39,6 +39,7 @@ public class HeavyMakeup extends Makeup {
     @Override
     public void primp() {
         super.primp();
+        System.out.println("准备画个浓妆！");
         thrush();
         foundation();
         lipstick();

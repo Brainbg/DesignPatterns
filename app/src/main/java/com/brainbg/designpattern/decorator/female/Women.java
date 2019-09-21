@@ -12,6 +12,6 @@ public class Women extends Female {
 
     @Override
     public void primp() {
-        System.out.println("打扮得美美的,我才能出门！");
+        System.out.println("今天要出门，准备打扮一下~");
     }
 }

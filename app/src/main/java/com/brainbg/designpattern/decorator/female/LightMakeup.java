@@ -9,6 +9,7 @@ package com.brainbg.designpattern.decorator.female;
  * </pre>
  */
 public class LightMakeup extends Makeup {
+
     public LightMakeup(Female mFemale) {
         super(mFemale);
     }
@@ -16,21 +17,21 @@ public class LightMakeup extends Makeup {
     /**
      * 洁面
      */
-    public void cleansing() {
-        System.out.println("洁个面");
+    private void cleansing() {
+        System.out.println("洁面");
     }
 
     /**
      * 爽肤水
      */
-    public void toner() {
+    private void toner() {
         System.out.println("抹点爽肤水");
     }
 
     /**
      * 面霜
      */
-    public void cream() {
+    private void cream() {
         System.out.println("涂个面霜");
     }
 
@@ -38,6 +39,7 @@ public class LightMakeup extends Makeup {
     @Override
     public void primp() {
         super.primp();
+        System.out.println("准备画个淡妆！");
         cleansing();
         toner();
         cream();

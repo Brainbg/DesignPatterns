@@ -8,11 +8,17 @@ package com.brainbg.designpattern.decorator.female;
  *     desc   :
  * </pre>
  */
-public class client {
+public class Client {
     public static void main(String[] args) {
 
         Women women = new Women();
 
-        LightMakeup lightMakeup = new LightMakeup();
+        LightMakeup lightMakeup = new LightMakeup(women);
+        lightMakeup.primp();
+
+        System.out.println("-------------------");
+
+        HeavyMakeup heavyMakeup = new HeavyMakeup(women);
+        heavyMakeup.primp();
     }
 }
