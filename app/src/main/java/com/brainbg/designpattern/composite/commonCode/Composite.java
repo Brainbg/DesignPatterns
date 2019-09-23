@@ -7,7 +7,7 @@ import java.util.ArrayList;
  *     author : brainbg
  *     e-mail : brainbg@foxmail.com
  *     time   : 2019/09/22
- *     desc   :
+ *     desc   :树枝
  * </pre>
  */
 public class Composite extends Component {
@@ -41,13 +41,19 @@ public class Composite extends Component {
     }
 
     @Override
-    public void operation() {
-        System.out.println(name);
+    public void operation(int level) {
+        StringBuilder tab = new StringBuilder();
+        StringBuilder line = new StringBuilder();
+        for (int i = 1; i <= level; i++) {
+            tab.append("    ");
+            line.append(" - ");
+        }
+        System.out.println(tab + "╙" + line + " " + name);
+        level += 1;
         if (null != components) {
             for (Component component : components) {
-                component.operation();
+                component.operation(level);
             }
-
         }
     }
 }

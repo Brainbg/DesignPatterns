@@ -1,18 +1,18 @@
-package com.brainbg.designpattern.composite.commonCode;
+package com.brainbg.designpattern.composite.transparent;
 
 /**
  * <pre>
- *     author : brainbg
+ *     author : Brainbg
  *     e-mail : brainbg@foxmail.com
- *     time   : 2019/09/22
- *     desc   :
+ *     time   : 2019/09/23
+ *     desc   : 客户类
  * </pre>
  */
 public class Client {
 
     public static void main(String[] args) {
         //创建一个根节点
-        Composite root = new Composite(" Root");
+        Composite root = new Composite("Root");
 
         //新建树枝节点
         Composite branchA = new Composite("BranchA");
@@ -39,13 +39,11 @@ public class Client {
         System.out.println("--------获取根子节点------------");
         //根获取子节点
         root.getChildren(0).operation(1);
-
         System.out.println("--------获取树枝子节点------------");
         //树枝获取子节点
         branchA.getChildren(0).operation(2);
-
-        System.out.println("--------获取叶子本身节点------------");
-        //叶子没有子节点
-        leafA.operation(2);
+        //叶子获取子节点，肯定失败
+        leafA.getChildren(0).operation(2);
     }
 }
+
