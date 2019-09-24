@@ -8,11 +8,11 @@ package com.brainbg.designpattern.facade.commonCode;
  *     desc   :
  * </pre>
  */
-public class ClassC {
+public class SubsystemB {
     /**
      * 业务逻辑
      */
-    public void operationC() {
-        System.out.println("业务逻辑C");
+    public void operationB() {
+        System.out.println("业务逻辑B");
     }
 }

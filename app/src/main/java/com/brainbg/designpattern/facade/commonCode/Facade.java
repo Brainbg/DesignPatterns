@@ -10,19 +10,19 @@ package com.brainbg.designpattern.facade.commonCode;
  */
 public class Facade {
     //被委托的对象
-    private ClassA classA = new ClassA();
-    private ClassB classB = new ClassB();
-    private ClassC classC = new ClassC();
+    private SubsystemA subA = new SubsystemA();
+    private SubsystemB subB= new SubsystemB();
+    private SubsystemC subC = new SubsystemC();
 
     public void methodA() {
-        this.classA.operationA();
+        this.subA.operationA();
     }
 
     public void methodB() {
-        this.classB.operationB();
+        this.subB.operationB();
     }
 
     public void methodC() {
-        this.classC.operationC();
+        this.subC.operationC();
     }
 }

@@ -8,7 +8,7 @@ package com.brainbg.designpattern.facade.commonCode;
  *     desc   :
  * </pre>
  */
-public class ClassA {
+public class SubsystemA {
     /**
      * 业务逻辑
      */
