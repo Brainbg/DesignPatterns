@@ -1,4 +1,8 @@
-package com.brainbg.designpattern.facade.commonCode;
+package com.brainbg.designpattern.facade.logic;
+
+import com.brainbg.designpattern.facade.commonCode.SubsystemA;
+import com.brainbg.designpattern.facade.commonCode.SubsystemB;
+import com.brainbg.designpattern.facade.commonCode.SubsystemC;
 
 /**
  * <pre>
@@ -12,7 +16,7 @@ public class Facade {
     //被委托的对象
     private SubsystemA subA = new SubsystemA();
     private SubsystemB subB = new SubsystemB();
-    private SubsystemC subC = new SubsystemC();
+    private Encapsulation enc = new Encapsulation();
 
     public void methodA() {
         this.subA.operationA();
@@ -23,6 +27,6 @@ public class Facade {
     }
 
     public void methodC() {
-        this.subC.operationC();
+        enc.operation();
     }
 }

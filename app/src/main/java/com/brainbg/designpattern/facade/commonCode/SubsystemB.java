@@ -1,12 +1,7 @@
 package com.brainbg.designpattern.facade.commonCode;
 
 /**
- * <pre>
- *     author : Brainbg
- *     e-mail : brainbg@foxmail.com
- *     time   : 2019/09/23
- *     desc   :
- * </pre>
+ SubsystemC
  */
 public class SubsystemB {
     /**
