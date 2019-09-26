@@ -5,15 +5,11 @@ package com.brainbg.designpattern.proxy.commonCode;
  *     author : Brainbg
  *     e-mail : brainbg@foxmail.com
  *     time   : 2019/09/25
- *     desc   :
+ *     desc   : 代理
  * </pre>
  */
 public class Proxy implements Subject {
-    private Subject subject;
-
-    public Proxy() {
-        this.subject = new Proxy();
-    }
+    private Subject subject;//持有一个主体对象的引用
 
     public Proxy(Subject subject) {
         this.subject = subject;

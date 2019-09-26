@@ -1,16 +1,13 @@
-package com.brainbg.designpattern.proxy.commonCode;
+package com.brainbg.designpattern.proxy.dynamicCommon;
 
 /**
  * <pre>
  *     author : Brainbg
  *     e-mail : brainbg@foxmail.com
- *     time   : 2019/09/25
- *     desc   :主体
+ *     time   : 2019/09/26
+ *     desc   :
  * </pre>
  */
 public interface Subject {
-    /**
-     * 业务逻辑
-     */
     public void operation();
 }
