@@ -2,6 +2,7 @@ package com.brainbg.designpattern.proxy.dynamic;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 
 /**
  * <pre>
@@ -11,11 +12,15 @@ import java.lang.reflect.Method;
  *     desc   :
  * </pre>
  */
-public class ProxyIH1 implements InvocationHandler {
-    private Object objcet;
+public class DynamicProxy implements InvocationHandler {
+    private Object object;
 
-    public ProxyIH1(Object objcet) {
-        this.objcet = objcet;
+    public DynamicProxy(Object object) {
+        this.object = object;
+    }
+
+    public Object newProxyInstance() {
+        return Proxy.newProxyInstance(object.getClass().getClassLoader(), object.getClass().getInterfaces(), this);
     }
 
     /**
@@ -29,11 +34,11 @@ public class ProxyIH1 implements InvocationHandler {
      */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        Object invoke = method.invoke(this.objcet, args);
-        if(method.getName().equalsIgnoreCase("promotion")){
+        Object invoke = method.invoke(this.object, args);
+        if (method.getName().equalsIgnoreCase("promotion")) {
             System.out.println("加大力度推广产品！");
         }
-        if(method.getName().equalsIgnoreCase("sale")){
+        if (method.getName().equalsIgnoreCase("sale")) {
             System.out.println("销售额有所提高！");
         }
         return invoke;

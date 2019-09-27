@@ -12,16 +12,8 @@ import java.lang.reflect.InvocationHandler;
  */
 public class Client {
     public static void main(String[] args) {
-        Subject subject = new RealSubject();
-
-        InvocationHandler handler = new MyInvocationHandler(subject);
-        Subject proxy = DynamicProxy.newProxyInstance(subject.getClass().getClassLoader(), subject.getClass().getInterfaces(), handler);
-        proxy.operation();
-
-        System.out.println("-------封装后-------");
-        Subject proxy1 = SubjectDynamicProxy.newProxyInstance(subject);
-        proxy1.operation();
-
-
+        DynamicProxyHandler proxyHandler = new DynamicProxyHandler();
+        Subject subject = (Subject) proxyHandler.newProxyInstance(new RealSubject());
+        subject.operation();
     }
 }
